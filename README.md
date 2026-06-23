@@ -2,17 +2,17 @@
 
 Investigação exploratória sobre os fatores associados à ausência de candidatos no ENEM 2019, usando os microdados oficiais do INEP filtrados para Minas Gerais.
 
-## 🎯 Motivação
+##  Motivação
 
-Em análises iniciais dos dados, percebi que o maior percentual de candidatos ausentes no dia da prova era de escola pública. Minha hipótese inicial era: alunos de escola pública são isentos da taxa de inscrição do ENEM, então parte deles se inscreve sem compromisso real de comparecer — inclusive desde os primeiros anos do Ensino Médio, "só para treinar" — o que explicaria a maior desistência.
+Em análises iniciais dos dados, percebi que o maior percentual de candidatos ausentes no dia da prova era de escola pública. Minha hipótese inicial era: alunos de escola pública são isentos da taxa de inscrição do ENEM, então parte deles se inscreve sem compromisso real de comparecer, inclusive desde os primeiros anos do Ensino Médio, "só para treinar",  o que explicaria a maior desistência.
 
 Este projeto documenta o processo real de testar essa hipótese com os dados: o que se confirmou, o que foi refutado, e a explicação mais consistente que emergiu da análise.
 
-## 🔍 Pergunta de pesquisa
+## Pergunta de pesquisa
 
 A desistência no ENEM entre estudantes de escola pública está associada à isenção da taxa de inscrição (inscrição "sem custo, sem compromisso"), ou existe uma explicação mais consistente nos dados?
 
-## 🗂️ Sobre os dados
+## Sobre os dados
 
 - **Fonte:** [Microdados do ENEM 2019 — INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem)
 - **Filtro aplicado:** candidatos residentes em Minas Gerais
@@ -20,14 +20,14 @@ A desistência no ENEM entre estudantes de escola pública está associada à is
 
 > O arquivo de dados não está incluído neste repositório por ser um recorte de uma base pública extensa. Baixe os microdados completos no link acima e filtre por `SG_UF_RESIDENCIA == 'MG'`.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - Python 3
 - pandas
 - matplotlib
 - Jupyter Notebook
 
-## 📈 Principais descobertas
+## Principais descobertas
 
 | Achado | Resultado |
 |---|---|
@@ -39,7 +39,7 @@ A desistência no ENEM entre estudantes de escola pública está associada à is
 
 **Conclusão:** a diferença de desistência entre escola pública e privada parece estar mais associada à vulnerabilidade socioeconômica (transporte, trabalho concorrendo com o horário da prova, suporte estrutural) do que à ausência de custo na inscrição.
 
-## 🚀 Como executar
+## Como executar
 
 ```bash
 git clone <url-do-repositorio>
@@ -50,7 +50,7 @@ pip install pandas matplotlib jupyter
 jupyter notebook analise_enem_mg_2019.ipynb
 ```
 
-## 📁 Estrutura do repositório
+## Estrutura do repositório
 
 ```
 analise-enem-mg-2019/
@@ -61,10 +61,10 @@ analise-enem-mg-2019/
     └── grafico_renda.png
 ```
 
-## 🧠 Aprendizados
+## Aprendizados
 
 - Antes de comparar percentuais entre grupos, sempre checar o tamanho da amostra — idades e categorias extremas podem distorcer a leitura.
-- A explicação mais intuitiva nem sempre é a mais sustentada pelos dados — e o processo de refutar a própria hipótese inicial é tão valioso quanto confirmá-la.
+- A explicação mais intuitiva nem sempre é a mais sustentada pelos dados e o processo de refutar a própria hipótese inicial é tão valioso quanto confirmá-la.
 
 ## 📬 Contato
 
